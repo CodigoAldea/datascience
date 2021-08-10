@@ -1,0 +1,158 @@
+Variables : 
+memory block to save a value of any data type.
+
+Comments : 
+These statements are not processed by interpretor, these are the statements used to explain the code. 
+we use # for single line comments and '''...''' for multi line comments. 
+
+Data Types :  
+    integers ,float, complex 
+    List, Tuple, range
+    Dictionary
+    String
+    Set, frozenset
+    bool
+    bytes, bytearray, memory view
+
+Casting :
+It is used to specify a type on to a variable. It is done using constructor function.
+    int() : constructs an integer number from an integral, float or string literal.
+    float() : constructs an float number from an integral, float or string literal.
+    str() : constructs a string from a wide variety of data types, including strings, integer literals and float literals.
+
+Operators : 
+They are used to perform operations on variable and vlaues. Python divides the operators in the following groups:
+    @ Arithmetic operators
+    @ Assignment operators
+    @ Comparison operators
+    @ Logical operators
+    @ Identity operators
+    @ Membership operators
+    @ Bitwise operators
+
+Conditions and If statements:
+Python supports the usual logical conditions from mathematics:
+    Equals: a == b
+    Not Equals: a != b
+    Less than: a < b
+    Less than or equal to: a <= b
+    Greater than: a > b
+    Greater than or equal to: a >= b
+
+    If Syntax : 
+        if condition :      (:) is very important.
+            code block          indentation befor the code block is important.
+
+    Elif Syntax : 
+        if condition : 
+            code block 
+        elif condition :
+            code block 
+
+    Else Syntax:
+        if condition : 
+            code block 
+        else:
+            last code block.
+
+    Short hand if :
+        if condition : code statements
+    Short hand if-else : 
+        code statements if condition else code statement        NO (:) IS USED HERE.
+    
+    AND :  The and keyword is a logical operator, and is used to combine conditional statements.
+        if condition and condition :
+            code block 
+    OR :  The or keyword is a logical operator, and is used to combine conditional statements.
+        if condition or condition:
+            codeblock
+
+    Nested if : You can have if statements inside if statements, this is called nested if statements.
+        if condition : 
+            if condition : 
+                codeblock
+            if condition :
+                codeblock
+
+
+LOOPS :
+    # while syntax: 
+            counter 
+            while condition : 
+                codeblock
+                counter increment or decriment.
+
+        @ Break statement : With the break statement we can stop the loop even if the while condition is true.
+
+        @ Continume statement : With the continue statement we can stop the current iteration, and continue with the next.
+
+        @ else statement : With the else statement we can run a block of code once when the condition no longer is true.
+
+    # for loop Syntax:
+            for variable in set of statements :
+                code block 
+        @ range function : Range function returns a sequence of number starting from 0 by default and incements by 1 and ends at the specified number. 
+
+            range (x)       x is the end of the range function.
+
+            ## Start, Stop, Step . 
+        @ In for loop we have a concept of nested loops.
+
+Funtions :
+    @ A function is a block of code which only runs when it is called.
+    @ You can pass data, known as parameters, into a function.
+    @ A function can return data as a result.
+    Syntax : 
+        def function_name(arguments):            ## def is the keyword used to define a function.
+            codeblock                            ## multiple arguments are separeted by coma (,)
+    calling a function : 
+        function_name(arguments)
+    ## If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+        This way the function will receive a tuple of arguments, and can access the items accordingly.
+    ## You can also send arguments with the key = value syntax. This way the order of the arguments does not matter.
+    ## If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
+        This way the function will receive a dictionary of arguments, and can access the items accordingly.
+    ## Python also accepts function recursion, which means a defined function can call itself.
+    ## number of argument in definition and call of the function should be same.
+
+Lambda Function : A lambda function is a small anonymous function.A lambda function can take any number of arguments, but can only have one expression.
+    Syntax : 
+        var = lambda arguments : expression
+
+Classes and Objects : 
+    Create a class :    
+        class <class_name>:
+            code block
+    create an Object:
+        var = classname()   # this var is the object.
+
+Modules : Consider a module to be the same as a code library. A file containing a set of functions you want to include in your application.
+    # to use the Modules we need to import them first to our code.
+    # we can rename the module by using (as) keyword. eg import numpy as np
+
+PIP : PIP is a package manager for Python packages, or modules if you like.
+
+Try Expect:
+    The try block lets you test a block of code for errors.
+    The except block lets you handle the error.
+    The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+User Input:
+    input() Funtion is used to get the user input.
+    Syntax : 
+        var = input('question string')
+        @ to get a specific type of input we use casting.
+
+String Formatting:
+    we use format() method to display the string as expected.
+
+File Handling : 
+    open() method to open a file. there are many mode to open the file in : 
+            "r" - Read - Default value. Opens a file for reading, error if the file does not exist
+            "a" - Append - Opens a file for appending, creates the file if it does not exist
+            "w" - Write - Opens a file for writing, creates the file if it does not exist
+            "x" - Create - Creates the specified file, returns an error if the file exists
+            "t" - Text - Default value. Text mode
+            "b" - Binary - Binary mode (e.g. images)
+    Syntax :
+        var= open(filename, mode)
